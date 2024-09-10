@@ -64,6 +64,7 @@ function App() {
   return (
     <div className="main">
       <h1>Taks Management</h1>
+      <p>{JSON.stringify(tasks)}</p>
       <div className="input_wrapper">
         <input
           ref={inputRef}
