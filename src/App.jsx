@@ -32,10 +32,10 @@ function App() {
   };
 
   const handleEditTask = () => {
-    if (!newTask) {
-      return;
-    }
-    editTask(editTaskId, { title: newTask });
+    //if (!newTask) {
+    //  return;
+    //}
+    editTask("test/1/4", { title: "test/1/4" });
     setEditTaskId(null);
     setEditTaskTitle("");
     setNewTask("");
@@ -64,6 +64,7 @@ function App() {
   return (
     <div className="main">
       <h1>Taks Management</h1>
+      <button onClick={handleEditTask}>Test</button>
       <p>{JSON.stringify(tasks)}</p>
       <div className="input_wrapper">
         <input
