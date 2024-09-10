@@ -35,7 +35,7 @@ function App() {
     if (!newTask) {
       return;
     }
-    editTask(editTaskId, { title: newTask });
+    editTask(editTaskId, { id: newTask });
     setEditTaskId(null);
     setEditTaskTitle("");
     setNewTask("");
@@ -161,6 +161,7 @@ function App() {
             : "No tasks found"}
         </div>
       )}
+    <p>{JSON.stringify(tasks)}</p>
     </div>
   );
 }
